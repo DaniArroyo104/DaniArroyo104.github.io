@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/vistas.css">
+</head>
+<body>
+    <div id="mySidebar" class="sidebar">    
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">←</a>
+        <ul class="menu">
+            <li><a href="./home.html"><span class="icono home"> </span> Inicio</a></li>
+            </li>
+            <li><a href="./clientes.html"><span class="icono cliente"> </span> Clientes</a></li>
+            <li><a href="./servicios.html"><span class="icono servicio"> </span>Servicios</a></li>
+            <li><a href="./trabajadores.html"><span class="icono trabajador"> </span>Trabajadores</a></li>
+            <li><a href="./ventas.html"><span class="icono venta"> </span>Ventas</a></li>
+            <li><a href="./index.html"><span class="icono salir"> </span>Salir</a></li>
+        </ul>
+    </div>
+
+    <div id="main">
+        <button class="openbtn" id="openbtn" onclick="openNav()">☰</button>
+        <h1 class="tituloprincipal"> Ventas</h1>
+
+        <div class="FormCliente">
+            <form>
+                <select class="txtdatos">
+                    <h1>Empleado</h1>
+                    <optgroup>
+                        <option> Daniel Arroyo </option>
+                        <option> Juan García </option>
+                        <option> John Marston </option>
+                        <option> Geralt de Rivia </option>
+                    <optgroup>
+                </select>
+                <select class="txtdatos">
+                    <optgroup>
+                        <option> Pulido </option>
+                        <option> Encerado</option>
+                        <option> Descontaminación de carrocería </option>
+                        <option> Lavado de motor</option>
+                        <option> Lavado de vestiduras de tela o piel</option>
+                        <option> Lavado completo </option>
+                    <optgroup>
+                </select>
+                <input type="search" name="Busca" id="Busca" class="txtdatos" placeholder="Buscar">
+                <input type="button" class="boton" id="btnVnetas" value="Agregar Servicio">
+                <br>
+            </form>
+
+            <table class="" id="datostabla2">
+                <thead>
+                    <tr>
+                        <th>Servicio</th>
+                        <th>Costo</th>
+                        <th>Eliminar</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>Pulido</td>
+                    <td>$650.00</td>
+                    <td>x</td>
+                </tr>
+                <tr>
+                    <td>Lavado de vestiduras de tela</td>
+                    <td>$200.00</td>
+                    <td>x</td>
+                </tr>
+                <tr>
+                    <td>Lavado de motor</td>
+                    <td>$100.00</td>
+                    <td>x</td>
+                </tr>
+            </table>
+
+            <div class="Ticket2">
+                <h2>
+                    Vehículo: Jeep Willys 1960 - Verde
+                </h2>
+                <table class="" id="datostabla2">
+                    <tr>
+                        <td>Pulido</td>
+                        <td>$650.00</td>
+                    </tr>
+                    <tr>
+                        <td>Lavado de vestiduras de tela </td>
+                        <td>$200.00</td>
+                    </tr>
+                    <tr>
+                        <td>Lavado de motor</td>
+                        <td>$100.00</td>
+                    </tr>
+                </table>
+                <br>
+                <h3>Trabajo realizado por:</h3>
+                <h3>Geralt de Rivia</h3> <br>
+                <h2>Total: $950.00</h2>
+            </div>
+            <input type="button" class="boton" id="btnVnetas" value="Finalizar Venta">
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+</html>
